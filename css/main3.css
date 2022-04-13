@@ -1,0 +1,436 @@
+@import url('http://fonts.cdnfonts.com/css/helvetica-neue-9');
+@import url('http://fonts.cdnfonts.com/css/apex-new');
+
+/* body */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Helvetica Neue', sans-serif;
+}
+
+body {
+    background-color: #8cb0b7;
+    text-align: center;
+    color: #fff;
+}
+
+/* Logo */
+
+.logo {
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    height: 100px;
+}
+
+/* tritre */
+
+.th {
+    margin-top: 50px;
+    font-family: 'Apex New Book', sans-serif;
+}
+
+.titre {
+    font-size: 50px;
+    margin-top: 30px;
+    font-family: 'Apex New Heavy', sans-serif;
+}
+
+h3 {
+    color: black;
+}
+
+/* Link */
+
+a {
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Apex New Book', sans-serif;
+}
+
+a::after {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* button */
+
+button {
+    border-radius: 30px;
+    font-size: 15px;
+    text-align: center;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-top: 10px;
+}
+
+button:hover {
+    cursor: pointer;
+    box-shadow: 10px #aaaaaa;
+    font-size: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    box-shadow: 0px 10px 20px 5px rgba(0, 0, 0, 0.5);
+    transform: translateY(-5px);
+}
+
+/* Fenetre modal */
+
+.modalbox
+{   
+    display: none;
+    position: fixed;
+    top: 0px;
+    width: 100vw;
+    height: 100vw;
+}
+
+.modalbox.active
+{
+    display: block;
+}
+
+.ombrebox
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #333333d3;
+}
+.fenetremodal1
+{
+    width: 700px;
+    height: 550px;
+    max-width: 700px;
+    min-width: 300px;
+    background: #fff;
+    border: solid 2px #e0c216;
+    border-radius: 5px;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.fenetremodal2
+{
+    width: 700px;
+    height: 550px;
+    max-width: 700px;
+    min-width: 300px;
+    background: #fff;
+    border: solid 2px pink;
+    border-radius: 5px;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.fenetremodal3
+{
+    width: 700px;
+    height: 550px;
+    max-width: 700px;
+    min-width: 300px;
+    background: #fff;
+    border: solid 2px red;
+    border-radius: 5px;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.fenetremodal4
+{
+    width: 700px;
+    height: 550px;
+    max-width: 700px;
+    min-width: 300px;
+    background: #fff;
+    border: solid 2px black;
+    border-radius: 5px;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.fenetremodal5
+{
+    width: 700px;
+    height: 550px;
+    max-width: 700px;
+    min-width: 300px;
+    background: #fff;
+    border: solid 2px #aa9252;
+    border-radius: 5px;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.fenetremodal6
+{
+    width: 700px;
+    height: 550px;
+    max-width: 700px;
+    min-width: 300px;
+    background: #fff;
+    border: solid 2px cyan;
+    border-radius: 5px;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.bfermeture-modal1
+{
+    height: 30px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.bfermeture-modal1:hover
+{   
+    height: 50px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.bfermeture-modal2
+{
+    height: 30px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.bfermeture-modal2:hover
+{   
+    height: 50px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.bfermeture-modal3
+{
+    height: 30px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.bfermeture-modal3:hover
+{   
+    height: 50px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.bfermeture-modal4
+{
+    height: 30px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.bfermeture-modal4:hover
+{   
+    height: 50px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.bfermeture-modal5
+{
+    height: 30px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.bfermeture-modal5:hover
+{   
+    height: 50px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.bfermeture-modal6
+{
+    height: 30px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+
+.bfermeture-modal6:hover
+{   
+    height: 50px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+
+.containerbox6
+{   
+
+    
+    width: 100%;
+    height: 450px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+}
+
+/* Section */
+
+section {
+    margin: 100px;
+}
+
+/* bordure box */
+
+.box1 {
+    border: solid 2px #e0c216;
+    background-color: #e0c216;
+}
+
+.box2 {
+    border: solid 2px pink;
+    background-color: pink;
+}
+
+.box3 {
+    border: solid 2px red;
+    background-color: red;
+}
+
+.box4 {
+    border: solid 2px black;
+    background-color: black;
+}
+
+.box5 {
+    border: solid 2px #aa9252;
+    background-color: #aa9252;
+}
+
+.box6 {
+    border: solid 2px cyan;
+    background-color: cyan;
+}
+
+.flex1 {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.flex1 div {
+    width: 250px;
+    height: 300px;
+    border-radius: 30px;
+}
+
+.flex2 {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.flex2 div {
+    height: 300px;
+    margin-top: 100px;
+    width: 250px;
+    border-radius: 30px;
+}
+
+.flex1 .imgcar {
+    display: block;
+    position: absolute;
+    top: 0;
+}
+/* img box*/
+.imgn {
+    width: 250px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+/* Button color box */
+
+.bcv {
+    border: solid 2px #e0c216;
+}
+
+.bpl {
+    border: solid 2px pink;
+}
+
+.bps {
+    border: solid 2px red;
+}
+
+.bs {
+    border: solid 2px black;
+}
+
+.bsk {
+    border: solid 2px #aa9252;
+}
+
+.bm {
+    border: solid 2px cyan;
+}
+
+/* footer*/
+
+
+footer {
+    margin: 70px;
+}
+
+.rs {
+    display: flex;
+    height: 70px;
+    text-align: center;
+    justify-content: center;
+}
+
+.imglink {
+    cursor: pointer;
+    width: 150px;
+}
+
+.copyright {
+    margin-top: 15px;
+    font-family: 'Apex New Book', sans-serif;
+}

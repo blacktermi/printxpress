@@ -1,0 +1,168 @@
+@import url('http://fonts.cdnfonts.com/css/helvetica-neue-9');
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Helvetica Neue', sans-serif;
+}
+
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #8cb0b7;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-family: 'Helvetica Neue', sans-serif;
+}
+.center-div
+{
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    background-color: #ccc;
+    border-radius: 3px;
+  }
+  
+h2
+{
+    position: relative;
+    font-size: 14vw;
+    color: #8cb0b7;
+    -webkit-text-stroke: 0.4vw #ffffff;
+    
+}
+
+h2::before
+{
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    color: #ffffff;
+    -webkit-text-stroke: 0vw #8cb0b7;
+    border-right: 2px solid #ffffff;
+    overflow: hidden;
+    animation: animate 6s linear infinite;
+}
+
+@keyframes animate
+{
+    0%
+    {
+        width: 0%;
+    }
+    70%
+    {
+        width: 100%;
+    }
+}
+
+h1
+{
+    margin-top: 50px;
+    text-align: center;
+    font-family: 'Helvetica Neue', sans-serif;
+    color: #ffffff;
+}
+
+div[class*=box] {
+  height: 33.33%;
+  width: 100%; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+
+.box-2 { background-color: #8cb0b7; }
+
+.btn {
+  line-height: 50px;
+  height: 50px;
+  text-align: center;
+  width: 250px;
+  cursor: pointer;
+}
+/* 
+========================
+      BUTTON
+========================
+*/
+.btn-two {
+  color: #FFF;
+  transition: all 0.5s;
+  position: relative; 
+}
+.btn-two span {
+  z-index: 2; 
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%; 
+}
+.btn-two::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  transition: all 0.5s;
+  border: 1px solid rgba(255,255,255,0.2);
+  border-radius: 30px 30px 30px 30px;
+  background-color: rgba(255, 255, 255, 0.151);
+}
+.btn-two::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  transition: all 0.5s;
+  border: 1px solid rgba(255,255,255,0.2);
+  border-radius: 30px 30px 30px 30px;
+  background-color: rgba(255,255,255,0.1);
+}
+.btn-two:hover::before {
+  transform: rotate(-45deg);
+  background-color: rgba(255,255,255,0);
+}
+.btn-two:hover::after {
+  transform: rotate(45deg);
+  background-color: rgba(255,255,255,0);
+}
+
+a
+{
+    color: #ffffff;
+    text-decoration: none;
+
+}
+
+
+a:hover
+{
+    font-size: 30px;
+}
+
+
+/*page de carte*/
